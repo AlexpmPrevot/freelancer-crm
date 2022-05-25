@@ -1,0 +1,11 @@
+<h3>Ajouter un nouveau client</h3>
+
+<%= simple_form_for @client do |f| %>
+  <%= f.input :name %>
+  <%= f.input :siret %>
+  <%= f.input :address %>
+  <%= f.input :interlocutor %>
+  <%= f.input :phone %>
+  <%= f.input :status %>
+  <%= f.button :submit, class: "btn btn-primary"%>
+<% end %>
